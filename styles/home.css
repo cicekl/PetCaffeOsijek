@@ -19,7 +19,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
   top: 50px; 
   left: 30px;
   gap: 30px;
@@ -129,4 +128,55 @@ a:active {
 .icon img {
   width: 60px;
 }
+
+
+.footer-main {
+  background-color: #3e2d27; 
+  color: #fff; 
+  padding: 20px 50px; 
+  font-family: Arial, sans-serif;
+}
+
+
+.footer-content {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1; 
+  min-width: 200px; 
+  text-align: left;
+}
+
+.column h3 {
+  font-size: 1.2rem; 
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffd700; 
+}
+
+.column ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.column ul li {
+  margin-bottom: 10px; 
+}
+
+.column ul li a {
+  color: #fff; 
+  text-decoration: none; 
+  font-size: 1rem; 
+}
+
+.column ul li a:hover {
+  color: #ffd700; 
+  transition: color 0.3s ease; 
+}
+
+
 
