@@ -1,0 +1,58 @@
+body {
+  background-color: #eeddbf;
+}
+
+h1 {
+  color: #3e2d27;
+  font-size: 60px;
+  text-align: center;
+}
+
+.btnMenu{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.btn {
+  background-color: #3e2d27;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px; 
+  cursor: pointer; 
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 10px 10px 10px;
+}
+
+.btn:hover {
+  background-color: #bc9c22; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+
+.image {
+  height: 900pt;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}

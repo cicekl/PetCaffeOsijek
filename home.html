@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/home.css">
+  <script src="/scripts/home.js"></script>
   <title>Pet Caffe Osijek</title>
 </head>
 <body>
   <header class="ontop">
+    <div class="navBar">
     <nav class="navigation">
       <ul class="links">
-        <li><a href="#home">NASLOVNA</a></li>
-        <li><a href="#meni">MENU</a></li>
-        <li><a href="#onama">O NAMA</a></li>
-        <li><a href="#kontakt">KONTAKT</a></li>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="/pages/menu.html">MENU</a></li>
+        <li><a href="/pages/about.html">ABOUT US</a></li>
+        <li><a href="/pages/contact.html">CONTACT</a></li>
+        <li><img src="images/logo.png" alt="Pet Caffe Osijek Logo" class="logo"></li>
       </ul>
     </nav>
-    <div class="logo-div">
-      <img src="images/logo.png" alt="Pet Caffe Osijek Logo" class="logo">
-    </div>
-    <div class="content">
-      <h1>Dobrodošli!</h1>
-      <p>Najbolja kava uz šapice u Osijeku!</p>
-      <div class="gumb">
-        <button class="btnNaruci">Pogledaj ponudu</button>
-      </div>
+  </div>
+
+    <div class="welcome">
+      <h1>Welcome!</h1>
+      <p>The best coffee with paw prints in Osijek!</p>
+        <button class="btnNaruci"><a href="/pages/menu.html" id="btnText">See the offer</a></button>
     </div>
   </header>
 
@@ -46,32 +46,71 @@
         <img src="images/paws.png" alt="Paws">
       </div>
     </section>
+
+    <section class="aboutUs">
+      <img src="images/opis.jpg" alt="Interior" class="interior">
+      <div>
+        <p class="aboutText">
+          Located in the heart of the city, Pet Caffe Osijek represents the perfect retreat for all lovers of <br> warm beverages and animal companionship.
+          This unique cafe offers an ambiance inspired by nature, <br> with warm brick walls, lush plants hanging from the ceilings, and details that <br> resemble rustic houses with courtyards full of life.
+        </p>
+        <p class="aboutText">
+          The highlight of the cafe is its four-legged residents - dogs, cats, and even the occasional rabbit, <br> who freely roam and socialize with guests. Alongside aromatic coffee, Pet Caffe also offers <br> special treats for pets, ensuring that no guest, whether on two legs or four, <br> is left without enjoyment.
+        </p>
+        <p class="aboutText">
+          Pet Caffe Osijek is not just a place for coffee - it’s a space where new friendships are forged, <br> both among people and pets. Ideal for families, nature lovers, and anyone <br> seeking a moment of peace in a busy day. Welcome!
+        </p>
+        
+    </section>
+
+    <section class="map">
+      <div class="mapText">
+        <h2>Where can you find us?</h2>
+        <p>Pet Caffe Osijek is located at Ljubimaca Street 12, right in the city center, easily accessible to all lovers of great coffee and animal companionship.</p>
+        <p>Situated in a quiet part of Osijek, it is surrounded by greenery and charming city streets. <br> The cafe is near the main city square, making it ideal for relaxation after a stroll or socializing with friends.</p>
+        <p>Visitors can easily recognize it by its rustic facade and the sign out front that warmly welcomes all pet lovers.</p>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11173.67648719238!2d18.650450688530317!3d45.562009622116925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce712ce0e4185%3A0x98a0d20aba0d86bc!2sZoo%20vrt%20Osijek!5e0!3m2!1sen!2sen!4v1737831724421!5m2!1sen!2sen" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+    </section>
   </main>
 
   <footer class="footer-main">
     <div class="footer-content">
       <div class="column">
-        <h3>O nama</h3>
+        <h3>About us</h3>
         <ul>
-          <li><a href="#">Pronađi nas</a></li>
-          <li><a href="#">Naša priča</a></li>
+          <li><a href="#">Find us</a></li>
+          <li><a href="#">Our story</a></li>
+          <li><a href="/pages/contact.html">Opening hours</a></li>
         </ul>
       </div>
       <div class="column">
-        <h3>Privatnost</h3>
+        <h3>Privacy</h3>
         <ul>
-          <li><a href="#">Uvjeti korištenja</a></li>
-          <li><a href="#">Kolačići</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Cookies</a></li>
         </ul>
       </div>
       <div class="column">
-        <h3>Društvene mreže</h3>
+        <h3>Social media</h3>
         <ul class="social-icons">
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">X</a></li>
           <li><a href="#">LinkedIn</a></li>
         </ul>
+      </div>
+      <div class="column">
+        <h3>Current time</h3>
+        <div id="clock" class="clock"></div>
+      </div>
+      <div id="clockContainer">
+        <div id="clock"></div>
+        <div id="status"></div>
       </div>
     </div> 
   </footer>
