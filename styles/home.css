@@ -6,7 +6,7 @@ body {
 }
 
 .ontop {
-  background-image: url("/images/bg2blurry.jpg"); 
+  background-image: url("./images/bg2blurry.jpg"); 
   background-size: cover;
   background-position: center; 
   height: 70vh; 
